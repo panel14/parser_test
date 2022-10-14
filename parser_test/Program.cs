@@ -123,7 +123,7 @@ string CreateCSVFile(string header)
     }
     else
     {
-        File.WriteAllText(path, header);
+        File.WriteAllLines(path, new List<string> { header });
     }
     return path;
 }
